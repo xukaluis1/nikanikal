@@ -74,3 +74,22 @@ const loop = () => {
 };
 
 loop();
+
+
+//jquery
+$(document).ready(function(){
+    $(".text .line span").on('click', function(){
+
+        $(".mimg .front, .mimg .back").css("transform", "scale(.3)");
+        var imgSrc = $(this).getAttribute("data-src");
+
+        setTimeout(function(){
+
+        $(".mimg .front, .mimg .back").css("transform", "scale(1)");
+
+        }, 700);
+    });
+});
+
+
+
